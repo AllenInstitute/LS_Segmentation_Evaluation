@@ -1,0 +1,12 @@
+--input 0*, /Users/nicholas.lusk/Documents/GitHub/LS_evaluation_tool/test_data/cellpose_crop.tif, 3
+--output /Users/nicholas.lusk/Documents/GitHub/LS_evaluation_tool/test_data/cellpose3D_output/XPIWITGUI/, 
+--xml /Users/nicholas.lusk/Documents/2021_10_15_XPIWIT/Bin/temp.xml
+--subfolder filterid, filtername
+--outputformat imagename, filtername
+--lockfile off
+--skipProcessingIfOutputExists off
+--logging file
+--metaDataHeader on
+--metaDataSeparator ;
+--metaDataDelimiter .
+--end

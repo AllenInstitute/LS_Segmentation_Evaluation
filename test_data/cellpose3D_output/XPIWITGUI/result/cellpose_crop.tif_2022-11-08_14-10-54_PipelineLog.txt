@@ -1,0 +1,71 @@
+/Users/nicholas.lusk/Documents/GitHub/LS_evaluation_tool/test_data/cellpose3D_output/XPIWITGUI/item_0007_GradientVectorFlowTrackingImageFilter/cellpose_crop_GradientVectorFlowTrackingImageFilter_Out1.tif does not exist yet.
+Executing Process Object: IMAGEREADER...
+Updating reader took: 0.02
+Updating intensity window filter took: 0.006
+Updating image wrapper took: 0
++ Execution of IMAGEREADER finished.
+	- Duration: 0.03 seconds.
+	+ Settings:
+		- WriteResult: 1
+		- WriteMetaData: 1
+		- MaxThreads: -1
+		- Compression: 1
+		- Precision: 16
+		- UseSeriesReader: 0
+		- SeriesMinIndex: 0
+		- SeriesMaxIndex: 499
+		- SeriesIncrement: 1
+		- SpacingX: 1
+		- SpacingY: 1
+		- SpacingZ: 1
+		- InputMinimumValue: 0
+		- InputMaximumValue: 255
+-----------------------------------------------------------------------------------------------
+Executing Process Object: CASTIMAGEFILTER...
+- Cast image: (f -> t)
+Rescale flag: 1
+- Windowing image: [0, 1] -> [0, 65535]
++ Execution of CASTIMAGEFILTER finished.
+	- Duration: 0.002 seconds.
+-----------------------------------------------------------------------------------------------
+Executing Process Object: IMAGEWRITER...
++ Execution of IMAGEWRITER finished.
+	- Duration: 0.012 seconds.
+	+ Settings:
+		- WriteResult: 1
+		- WriteMetaData: 1
+		- MaxThreads: -1
+		- Compression: 1
+		- Precision: 16
+		- Precision: 16
+		- Compression: 1
+-----------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------
+Initialize Process Object: RESCALEINTENSITYIMAGEFILTER...
+-----------------------------------------------------------------------------------------------
+Executing Process Object: RESCALEINTENSITYIMAGEFILTER...
++ Execution of RESCALEINTENSITYIMAGEFILTER finished.
+	- Duration: 0.004 seconds.
+	+ Settings:
+		- WriteResult: 0
+		- WriteMetaData: 1
+		- MaxThreads: 10
+		- Compression: 1
+		- Precision: 16
+-----------------------------------------------------------------------------------------------
+Executing Process Object: TORCHMODEL...
+-----------------------------------------------------------------------------------------------
+Initialize Process Object: TORCHMODEL...
+-----------------------------------------------------------------------------------------------
+- Processing image with 10 threads.
+- Image Dimension: 3
+- Image Size: [250, 250, 50]
+- Patch Size: [25, 25, 10]
+- Patch Stride: [12, 12, 5]
+- Num Steps: [20, 20, 10]
+- Processing region with index [0, 0, 0] and size [25, 25, 10]
+Error while executing pipeline for input set .0
+Error for image: cellpose_crop.tif
+In path: /Users/nicholas.lusk/Documents/GitHub/LS_evaluation_tool/test_data/cellpose_crop.tif
+-----------------------------------------------------------------------------------------------
+--> Pipeline successfully executed in 0.142 seconds.
